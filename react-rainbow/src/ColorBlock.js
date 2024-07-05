@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-function App(){
-    let colors = ['violet', 'blue', 'lightblue', 'green', 'greenyellow', 'yellow', 'orange', 'red']
+function ColorBlock(props){
     return (
-        <div className="App">
-
+        <div className="colorBlock"
+        style={{'backgroundColor': props.color}}>
+            <p>{props.color}</p>
         </div>
     )
 }
+
+// Do not forget to export your component once you have built it!
+export default ColorBlock
